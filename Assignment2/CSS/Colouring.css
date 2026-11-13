@@ -1,0 +1,12 @@
+#textColor {
+    color: #263247;
+}
+
+.sidebar #textColor,
+footer#textColor,
+footer#textColor p {
+    color: #263247;
+}
+#textColorBody{
+    background-color: rgb(196, 209, 209);
+}

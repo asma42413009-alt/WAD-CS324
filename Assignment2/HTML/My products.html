@@ -1,0 +1,207 @@
+/* By Mahnoor*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My products</title>
+    <link rel="stylesheet" href="../CSS/WWD.css">
+    <link rel="stylesheet" href="../CSS/Colouring.css">
+</head>
+<body id="textColorBody">
+    <header class="top-header">
+
+    <a href="dashboard.html" class="brand">
+        <img src="../images/logo image.jpeg" alt="Logo" class="logo-image">
+        <span id="textColor">AI Warranty Tracker</span>
+    </a>
+
+    <form class="top-search" action="#" method="get">
+        <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search products or documents..."
+            aria-label="Search products or documents">
+
+        <button type="submit" id="textColor">Search</button>
+    </form>
+
+    <div class="user-area">
+
+        <a href="Reminders.html" class="user-link">
+            <img src="../images/notification.png"
+                 alt="Notifications"
+                 class="header-icon">
+            <span id="textColor">Notifications</span>
+        </a>
+
+        <a href="index.html" class="user-link">
+            <img src="../images/profile.png"
+                 alt="User profile"
+                 class="header-icon">
+            <span class="user-name" id="textColor">Profile</span>
+        </a>
+
+    </div>
+
+</header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html" id="textColor">Dashboard</a>
+                <a href="products.html" class="active" id="textColor">My Products</a>
+                <a href="uploadDocument.html" id="textColor">Upload Documents</a>
+                <a href="search and filter.html" id="textColor">Search and Filters</a>
+                <a href="Reminders.html" id="textColor">Reminders</a>
+                <a href="index.html" id="textColor">Profile</a>
+            </nav>
+            <a href="index.html" class="logout" id="textColor">Logout</a>
+        </aside>
+        <main class="main-content" id="textColorBody">
+            <section class="page-heading">
+                <h1>My Products</h1>
+                <p id="textColorBody">
+                    View and manage your registered products,
+                    purchase details, and warranty information.
+                </p>
+            </section>
+            <section class="product-sention">
+                <div class="table-heading">
+                    <h2>My Products(4)</h2>
+                    <p id="textColorBody">Showing 1-4 of 4 products</p>
+                </div>
+                <div class="table-container">
+                    <table class="table-container">
+                        <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Purchase Date</th>
+                            <th>Expiry Date</th>
+                            <th>Warranty Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <strong>Dell laptop</strong>
+                                    <br>
+                                    <small>ID: 123456</small>
+                                </td>
+                                <td>Laptops</td>
+                                <td>15 March 2026</td>
+                                <td>15 March 2028</td>
+                                <td>
+                                    <span  class="status active-status">
+                                        Active
+                                    </span>
+                                </td>
+                                <td class="actions">
+                                    <a href="products.html" id="textColorBody">View</a>
+                                    <a href="products.html" id="textColorBody">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <strong>Samsung Phone</strong>
+                                    <br>
+                                    <small>ID: 12345</small>
+                                </td>
+                                <td>Mobile phone</td>
+                                <td>10 Jan 2026</td>
+                                <td>10 Jan 2027</td>
+                                <td>
+                                    <span class="status active-status">Active</span>
+                                </td>
+                                <td class="actions">
+                                    <a href="product.html" id="textColorBody">View</a>
+                                    <a href="products.html" id="textColorBody">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <strong>Sony Headphones</strong>
+                                    <br>
+                                    <small>ID: 12345</small>
+                                </td>
+                                <td>Headphone</td>
+                                <td>5 feb 2025</td>
+                                <td>5 feb 2026</td>
+                                <td>
+                                    <span class="status active-status">Expired</span>
+                                </td>
+                                <td class="actions">
+                                    <a href="product.html" id="textColorBody">View</a>
+                                    <a href="products.html" id="textColorBody">Edit</a>
+                                </td>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>
+                                        <strong>HP printer</strong>
+                                        <br>
+                                        <small>ID: 12345</small>
+                                    </td>
+                                    <td>Printer</td>
+                                    <td>20 April 2026</td>
+                                    <td>20 April 2027</td>
+                                    <td>
+                                        <span class="status active-status">Active</span>
+                                    </td>
+                                    <td class="actions">
+                                        <a href="products.html" id="textColorBody">View</a>
+                                        <a href="products.html" id="textColorBody">Edit</a>
+                                    </td>
+                                </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <div class="rows-control">
+                        <label for="rows">Rows per page:</label>
+                        <select id="rows" name="rows">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    <div class="pagination">
+                        <a href="products.html">
+                            &lt;
+                        </a>
+                        <span class="current-page">1</span>
+                        <a class="current-page">
+                            &gt;
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer id="textColor">
+        <p>&copy; 2026 AI Warranty And Purchase Manager. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook-Image" width="30px" height="30px"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="Twitter-Image" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram-Image" width="40px" height="30px"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="../images/youtube.png" alt="YouTube-Image" width="30px" height="30px"></a>
+        </div>
+    </footer>
+</body>
+</html>

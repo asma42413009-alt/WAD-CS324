@@ -1,0 +1,281 @@
+/* By Asma Waseem*/
+/*For index.html*/
+
+.navbar .logo{
+    height:50px;
+    width:60px;
+    margin-left: 10px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display:flex;
+    justify-content: space-between;  
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+#LogInBtn
+{
+   width:80px;
+   height:30px;
+}
+
+#SignUpBtn
+{
+   width:80px;
+   height:30px;
+}
+
+.search-container input
+{
+    height:30px;
+    width: 300px;
+}
+#FeaturesHeading
+{
+    scroll-margin-top: 120px;
+}
+
+#HowItWorks
+{
+    scroll-margin-top: 120px;
+}
+
+.nav-links, .auth-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+    color:black;
+}
+
+.nav-links
+{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    font-size: larger;
+}
+.nav-links li:hover{
+    transform: scale(1.05);
+}
+
+.main-logo:hover{
+    transform: scale(1.05);
+}
+
+.features
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.features .icon-box{
+    width: auto;
+    height: 300px;
+    border: 1px solid #140101;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.features .icon-box:hover{
+    transform: scale(1.05);
+}
+
+.icon-box img{
+    width: 200px;
+    height: 200px;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-logo
+{
+    display: block;
+    margin: auto;
+    width: 700px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*for SignUp.html*/
+
+.Outer-Box
+{
+   
+    position:relative;
+    width:50%;
+    margin: auto;
+}
+
+.crossModify
+{
+    position: absolute;
+    right:0;
+    top: 0;
+}
+
+.FormModify{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.FormModify .LegendElements p,h1
+{
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.FormModify legend {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.LegendElements {
+    width: 100%;
+} 
+
+.FormModify fieldset {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.LegendElements  p {
+    text-align: center;
+} 
+
+.LegendElements img{
+    width:150px;
+    height:150px;
+}
+
+.input-box
+{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 45px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.input-box img {
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.input-box input{
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    padding-left: 35px; 
+}
+
+.crossModify img{
+    width: 50px;
+    height: 50px;
+}
+
+.SgnUpBtn {
+    text-align: center;
+}
+
+.LoginPart {
+    text-align: center;
+}
+
+.LoginPart p {
+    display: inline;
+}
+
+.LoginPart a {
+    margin-left: 20px;
+}
+
+.Forget
+{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    position: relative;
+    margin: 10px auto;
+
+}
+
+.Forget a{
+    margin-left: auto;
+}
+
+.WorkingDetails
+{
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    margin: 40px auto 40px auto;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+}
+
+.WorkingDetails h2 {
+    margin-bottom: 30px;
+}
+
+.WorkingDetails ol{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:25px;
+    padding:0;
+    list-style: none;
+}
+
+.WorkingDetails li{
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    min-height:150px;
+}
+
+.WorkingDetails li:hover{
+    transform:scale(1.03);
+}
+
+.WorkingDetails li:strong{
+    font-size: 20px;
+}
+
+.WorkingDetails li p {
+    margin-top: 15px;
+}

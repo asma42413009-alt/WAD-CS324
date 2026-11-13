@@ -1,0 +1,184 @@
+/* By Mahnoor*/<
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and filter</title>
+    <link rel="stylesheet" href="../CSS/Colouring.css">
+    <link rel="stylesheet" href="../CSS/WWD.css">
+</head>
+
+<body id="textColorBody">
+    <header class="top-header">
+
+        <a href="dashboard.html" class="brand">
+            <img src="../images/logo image.jpeg" alt="Logo" class="logo-image"  id="textColor">
+            <span  id="textColor">AI Warranty Tracker</span>
+        </a>
+
+        <form class="top-search" action="#" method="get">
+            <input type="search" id="search" name="search" placeholder="Search products or documents..."
+                aria-label="Search products or documents">
+
+            <button type="submit"  id="textColor">Search</button>
+        </form>
+
+        <div class="user-area">
+
+            <a href="Reminders.html" class="user-link">
+                <img src="../images/notification.png" alt="Notifications" class="header-icon" id="textColor">
+                <span id="textColor" >Notifications</span>
+            </a>
+
+            <a href="index.html" class="user-link">
+                <img src="../images/profile.png" alt="User profile" class="header-icon" id="textColor">
+                <span class="user-name" id="textColor">Profile</span>
+            </a>
+
+        </div>
+
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar" >
+            <nav>
+                <a href="dashboard.html" id="textColor">Dashboard</a>
+                <a href="My products.html" id="textColor">My Products</a>
+                <a href="uploadDocument.html" id="textColor">Upload Documents</a>
+                <a href="search and filter.html" id="textColor" class="active">Search and Filters</a>
+                <a href="Reminders.html" id="textColor">Reminders</a>
+                <a href="#" id="textColor">Profile</a>
+            </nav>
+            <a href="#" class="logout" id="textColor">Logout</a>
+        </aside>
+        <main class="main-content">
+            <h1>Search &amp; Filter</h1>
+            <p class="page-description">
+                Find your products using different search criteria.
+            </p>
+            <section class="filter-card">
+                <h2>Filter Products</h2>
+                <form action="search.html" method="get" class="filter-form">
+
+                    <div class="filter-field">
+                        <label for="product-search">Product Name or Brand</label>
+                        <input type="search" id="product-search" name="product"
+                            placeholder="Enter product name or brand">
+                    </div>
+                    <div class="filter-field">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="home">Home Appliances</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+                    <div class="filter-field">
+                        <label for="warranty-status">Warranty Status</label>
+                        <select id="warranty-status" name="status">
+                            <option value="">All Statuses</option>
+                            <option value="active">Active</option>
+                            <option value="expiring">Expiring Soon</option>
+                            <option value="expired">Expired</option>
+                        </select>
+                    </div>
+                    <div class="filter-field">
+                        <label for="purchase-date">Purchase Date</label>
+                        <input type="date" id="purchase-date" name="purchase-date">
+                    </div>
+                    <div class="filter-field">
+                        <label for="expiry-date">Warranty Expiry Date</label>
+                        <input type="date" id="expiry-date" name="expiry-date">
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button type="submit">Apply Filters</button>
+                        <button type="reset" class="clear-button">Clear Filters</button>
+                    </div>
+
+                </form>
+            </section>
+            <section class="applied-filters">
+
+                <h2>Applied Filters</h2>
+
+                <div class="filter-tags">
+                    <span class="filter-tag">No filters selected</span>
+                </div>
+
+            </section>
+            <section class="results-section">
+                <div class="table-heading">
+                    <h2>Search Result</h2>
+                    <span>3 products found</span>
+                </div>
+                <div class="table-wrapper">
+                    <table class="product-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Purchase Date</th>
+                                <th>Warranty Expiry</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>HP laptop</strong><br>
+                                    <small>Product ID: P001</small>
+                                </td>
+                                <td>Electronics</td>
+                                <td>15 Jan 2026</td>
+                                <td>15 Jan 2028</td>
+                                <td><span class="status active-status">Active</span></td>
+                                <td><a href="products.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Samsung Refrigerator</strong><br>
+                                    <small>Product ID: P002</small>
+                                </td>
+                                <td>Home Appliances</td>
+                                <td>10 Mar 2024</td>
+                                <td>10 Mar 2027</td>
+                                <td><span class="status active-status">Active</span></td>
+                                <td><a href="products.html">View</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Wireless Headphones</strong><br>
+                                    <small>Product ID: P003</small>
+                                </td>
+                                <td>Accessories</td>
+                                <td>20 Aug 2023</td>
+                                <td>20 Aug 2025</td>
+                                <td><span class="status expired-status">Expired</span></td>
+                                <td><a href="products.html">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer" id="textColor">
+        <p>&copy; 2026 AI Warranty And Purchase Manager. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><img src="../images/facebook.png" alt="Facebook-Image"
+                    width="30px" height="30px"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="../images/twitter.png" alt="Twitter-Image"
+                    width="30px" height="30px"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram-Image"
+                    width="40px" height="30px"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="../images/Youtube.png" alt="YouTube-Image"
+                    width="30px" height="30px"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
